@@ -1,0 +1,306 @@
+@import "style-lib.scss";
+
+.modal {
+  position: relative;
+  display: none;
+  box-sizing: border-box;
+  width: 290px;
+
+  position: absolute;
+  top: 1263px;
+  left: 50%;
+  z-index: 102;
+  margin-left: -145px;
+
+  padding: 47px 10px 33px 10px;
+
+  background-color: $base-bg-color;
+
+  border-radius: 6px;
+
+  &__title {
+    width: 290px;
+    padding: 0;
+    margin: 0;
+    margin-left: 61px;
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  &__field {
+    box-sizing: border-box;
+    width: 270px;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6px;
+
+    border: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    width: 270px;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 13px;
+
+    &--name {
+      margin-bottom: 16px;
+    }
+
+    &--surname,
+    &--user-phone {
+      margin-bottom: 20px;
+    }
+
+    &--card {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    width: 270px;
+
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+
+    &--color {
+      position: absolute;
+      top: 11px;
+
+      font-size: 17px;
+      font-weight: 500;
+      color: darkred;
+    }
+
+    &--card {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    width: 270px;
+    height: 44px;
+
+    padding-left: 15px;
+
+    border: 1px solid #C7C7C7;
+    border-radius: 3px;
+
+    &--date {
+      background-image: url("../img/border.svg");
+      background-position: 96% 45%;
+      background-repeat: no-repeat;
+    }
+
+    &--card {
+      height: 47px;
+      padding: 18px;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+
+      color: $companion4-text-color;
+    }
+  }
+
+  &__input-icon--calendar {
+      position: absolute;
+      box-sizing: border-box;
+
+      width: 25px;
+      height: 24px;
+
+      padding: 5px 0px 0px 5px;
+
+      top: 39px;
+      right: 12px;
+      color: #83888A;
+
+      cursor: pointer;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: orange;
+      }
+  }
+
+  &__input:invalid {
+    color: red;
+  }
+
+  &__checkbox-label {
+    position: relative;
+    display: block;
+    width: 200px;
+
+    padding: 0;
+    padding-left: 25px;
+    margin: 0;
+
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+
+    &::before {
+      @include pseudo-element;
+
+      top: 2px;
+      left: 0;
+
+      width: 16px;
+      height: 16px;
+
+      background-color: $companion2-text-color;
+
+      box-shadow: 0px 0px 3px rgba(201, 64, 66, 0.6);
+      border-radius: 2px;
+    }
+  }
+
+  &__checkbox:checked+&__checkbox-label::after {
+    @include pseudo-element;
+
+    top: 5px;
+    left: 3px;
+
+    width: 10px;
+    height: 10px;
+
+    background-image: url("../img/small-tick.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &__button {
+    margin-left: 8px;
+  }
+
+  &__button-close {
+    position: absolute;
+
+    top: 15px;
+    right: 22px;
+  }
+}
+
+.modal--show {
+  display: block;
+}
+
+@media (min-width: 1920px) {
+  .modal {
+
+    width: 615px;
+
+    position: absolute;
+    top: 230px;
+
+    margin-left: -309px;
+
+    padding: 60px 97px 33px 98px;
+
+    &__title {
+      width: 439px;
+
+      margin-left: 120px;
+      margin-bottom: 26px;
+
+      font-size: 22px;
+      line-height: 33px;
+
+    }
+
+    &__field {
+      width: 439px;
+      margin-bottom: 11px;
+    }
+
+    &__list {
+      width: 439px;
+    }
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+
+      &--name,
+      &--surname,
+      &--user-phone {
+        margin-bottom: 10px;
+      }
+
+      &--card {
+        margin-bottom: 34px;
+      }
+    }
+
+    &__label {
+      width: 439px;
+
+      &--card {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__input {
+      width: 420px;
+
+      &--card {
+        height: 44px;
+      }
+
+      &--card-time,
+      &--card-key {
+        width: 210px;
+      }
+    }
+
+    &__input-icon--calendar {
+      top: 39px;
+      right: 38px;
+    }
+
+    &__checkbox-label {
+      width: 396px;
+
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+
+    }
+
+    &__button {
+      margin-left: 13px;
+    }
+
+    &__button-close {
+      top: 22px;
+      right: 30px;
+    }
+  }
+}

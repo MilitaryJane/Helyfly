@@ -1,0 +1,72 @@
+@import "style-lib.scss";
+
+.promo {
+  width: 320px;
+  min-height: 655px;
+  padding-left: 15px;
+
+  background-image: url("../img/helimain-mobil.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+      background-image: url("../img/helimain-mobil@2x.jpg");
+      background-size: 320px auto;
+  }
+
+  &__slogan {
+    width: 264px;
+
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    padding-top: 142px;
+
+
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+
+    color: $companion1-text-color;
+  }
+
+  &__slogan--color {
+    color: $companion2-text-color;
+  }
+
+  &__price {
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .promo {
+    width: 1920px;
+    min-height: 840px;
+    padding-left: 390px;
+
+    background-image: url("../img/helimain-desk.jpg");
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        background-image: url("../img/helimain-desk@2x.jpg");
+        background-size: 1920px auto;
+    }
+
+    &__slogan {
+      width: 887px;
+
+      margin-bottom: 20px;
+
+      padding-top: 288px;
+
+      font-size: 40px;
+      line-height: 49px;
+    }
+
+    &__price {
+      margin-bottom: 23px;
+    }
+  }
+}

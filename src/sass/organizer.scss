@@ -1,0 +1,149 @@
+@import "style-lib.scss";
+
+.organizer {
+  width: 290px;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  &__photo-wrapper {
+    position: relative;
+    width: 139px;
+    margin-left: 68px;
+    margin-bottom: 25px;
+
+    &::before {
+      @include pseudo-element;
+
+      top: -13px;
+      right: -83px;
+
+      width: 31px;
+      height: 27px;
+
+      background-image: url("../img/heart.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__photo {
+    border-radius: 50%;
+  }
+
+  &__name {
+    width: 163px;
+    display: block;
+
+    margin-left: 57px;
+    margin-bottom: 5px;
+
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+
+  &__prof {
+    width: 290px;
+    display: block;
+
+    margin-left: 103px;
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    width: 290px;
+    display: block;
+
+    margin-left: -9px;
+    text-align: center;
+
+    color: $companion3-text-color;
+  }
+}
+
+
+.organizer--legend {
+  width: 274px;
+  display: flex;
+
+  flex-wrap: wrap;
+
+}
+
+.organizer__photo-wrapper--legend {
+  width: 67px;
+  margin:0;
+  padding-left: 29px;
+
+
+  &::before {
+    content: none;
+  }
+}
+
+.organizer__wrapper--legend {
+  box-sizing: border-box;
+  width: 177px;
+  padding-left: 12px;
+
+}
+
+.organizer__name--legend {
+  width: 134px;
+
+  margin: 0;
+  margin-bottom: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.organizer__prof--legend {
+  width: 134px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.organizer__link--legend {
+  width: 134px;
+  margin: 0;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+
+@media (min-width: 1920px) {
+  .organizer--legend {
+    width: 420px;
+  }
+  .organizer__wrapper--legend {
+    width: 300px;
+  }
+
+  .organizer__name--legend {
+    width: 200px;
+    margin-bottom: 3px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .organizer__prof--legend {
+    width: 134px;
+    margin: 0;
+    margin-bottom: 2px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .organizer__link--legend {
+    width: 300px;
+
+    font-size: 14px;
+    line-height: 21px;
+
+  }
+}

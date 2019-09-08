@@ -1,0 +1,134 @@
+@import "style-lib.scss";
+
+.page-footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  &__wrapper {
+    width: 320px;
+    padding-left: 15px;
+    padding-top: 26px;
+
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &:first-child {
+      border-bottom: 0.5px solid #B3B3B3;
+    }
+  }
+
+  &__logo {
+    padding-top: 4px;
+    margin-right: 69px;
+  }
+
+  &__social {
+    margin-bottom: 15px;
+  }
+
+  &__payment {
+    margin-right: 110px;
+  }
+
+  &__lang {
+    position: relative;
+    width: 40px;
+    display: block;
+
+    padding: 0;
+    padding-top: 4px;
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+
+    &::after {
+      @include pseudo-element;
+
+      top: 10px;
+      right: 0;
+
+      width: 11px;
+      height: 6px;
+
+      background-image: url("../img/arrow.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__text-wrapper {
+    width: 290px;
+
+    margin-top: 26px;
+
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+
+    color: $companion4-text-color;
+  }
+
+  &__support {
+    padding-left: 25px;
+    margin-bottom: 12px;
+  }
+
+  &__copyright {
+    padding-left: 16px;
+  }
+
+}
+
+@media (min-width: 1920px) {
+  .page-footer {
+    padding-top: 5px;
+    padding-bottom: 0px;
+
+
+    &__wrapper {
+      box-sizing: border-box;
+      position: relative;
+      width: 1920px;
+      padding-left: 456px;
+      padding-right: 390px;
+      padding-top: 26px;
+      margin-left: 0px;
+
+      &:last-of-type {
+        background-color: $companion2-bg-color;
+      }
+
+      &:first-child {
+        border-bottom: none;
+      }
+    }
+
+    &__logo {
+      padding-top: 20px;
+      margin-right: 673px;
+    }
+
+    &__social {
+      padding-top: 13px;
+      margin-bottom: 37px;
+    }
+
+    &__payment {
+      margin-right: 200px;
+    }
+
+    &__lang {
+      position: absolute;
+
+      top: -70px;
+      right: 456px;
+    }
+
+    &__text-wrapper {
+      margin-top: 0;
+    }
+  }
+}

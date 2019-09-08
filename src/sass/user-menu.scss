@@ -1,0 +1,16 @@
+@import "style-lib.scss";
+
+.user-menu {
+  width: 20px;
+  height: 20px;
+
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 1920px) {
+  .user-menu {
+    width: 30px;
+    height: 30px;
+  }
+}

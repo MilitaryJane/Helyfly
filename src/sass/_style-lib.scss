@@ -1,0 +1,30 @@
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// Text colors
+$base-text-color: #37373F;
+$companion1-text-color: #FFFFFF;
+$companion2-text-color: #FC9B09;
+$companion3-text-color: #5286EC;
+$companion4-text-color:#B3B3B3;
+$companion4-text-color:#C7C7C7;
+
+
+
+// Backgrounds colors
+$base-bg-color: #ffffff;
+$companion1-bg-color: #FC9B09;
+$companion2-bg-color:#FAF9F8;
+
+
+
+// Borders
+$base-border: 0.5px solid #C7C7C7;;
+
+
+
+@mixin pseudo-element ($content: "", $display:block, $pos:absolute) {
+    content: $content;
+    display: $display;
+    position: $pos;
+}

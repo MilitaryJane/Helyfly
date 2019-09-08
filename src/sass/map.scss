@@ -1,0 +1,40 @@
+@import "_style-lib.scss";
+
+.map {
+  width: 320px;
+
+  &__api {
+    width: 320px;
+    height: 423px;
+  }
+
+  &__api iframe {
+    width: 320px;
+    height: 423px;
+  }
+
+}
+
+@media(min-width: 1920px) {
+  .map {
+    width: 1920px;
+    position: relative;
+
+    &__api {
+      width: 1920px;
+      height: 509px;
+    }
+
+    &__api iframe {
+      width: 1920px;
+      height: 509px;
+    }
+
+    &__legend {
+      position: absolute;
+      top: 23px;
+      left: 390px;
+    }
+
+  }
+}

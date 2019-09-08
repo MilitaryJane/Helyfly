@@ -1,0 +1,32 @@
+@import "style-lib.scss";
+
+.payment {
+  width: 140px;
+
+  &__list {
+    width: 135px;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1920px) {
+  .payment {
+    width: 170px;
+
+    &__list {
+      width: 160px;
+    }
+
+    &__icon {
+      width: 39px;
+      height: 27px;
+    }
+  }
+}

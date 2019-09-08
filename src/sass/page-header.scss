@@ -1,0 +1,81 @@
+@import "style-lib.scss";
+
+.page-header {
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+  }
+
+  &__logo {
+    margin-left: 0;
+    margin-right: 45px;
+    margin-top: 23px;
+  }
+
+  &__phone {
+    display: none;
+  }
+
+  &__location {
+    display: inline-block;
+
+    width: 56px;
+
+    padding: 0;
+    margin-left: 0;
+    margin-right: 85px;
+    margin-top: 26px;
+
+    font-size: 14px;
+    line-height: 17px;
+
+    color: $companion3-text-color;
+  }
+
+  &__user-menu {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .page-header {
+
+    &__logo {
+      margin-right: 37px;
+      margin-top: 38px;
+    }
+
+    &__phone {
+      display: inline-block;
+
+      width: 200px;
+
+      padding: 0;
+      margin-left: 0;
+      margin-right: auto;
+      margin-top: 42px;
+
+      font-size: 14px;
+      line-height: 17px;
+
+      color: $companion4-text-color;
+    }
+
+    &__phone a {
+      color: $base-text-color;
+    }
+
+    &__location {
+      display: none;
+    }
+
+    &__user-menu {
+      margin-top: 36px;
+      margin-bottom: 34px;
+    }
+  }
+}

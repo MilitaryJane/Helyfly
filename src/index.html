@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELYFLY</title>
+    <link href="fonts/montserrat-regular.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-medium.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-semibold.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-bold.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-extrabold.woff2" rel="preload" as="font">
+    <link href="fonts/montserrat-black.woff2" rel="preload" as="font">
+    <link href="css/styles.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <header class="page-header">
+        <div class="container">
+          <div class = "page-header__wrapper">
+            <a class="page-header__logo logo" aria-label="Логотип HELYFLY">
+              <svg class="logo__image" width="84" height="15.33">
+                  <use xlink:href="img/sprite.svg#sprite-logo"></use>
+              </svg>
+            </a>
+            <span class = "page-header__phone">Телефон:<a href="tel:+78001231212">8(800)-123-12-12</a></span>
+            <span class = "page-header__location"><a href="#">Москва</a></span>
+            <ul class = "page-header__user-menu user-menu">
+              <li class = "user-menu__item">
+                <a class="user-menu__icon" href = "#" aria-label="Войти в личный кабинет">
+                  <img class="user-menu__image" src = "img/authorization.svg" width="20" height="20" alt = "Иконка входа в личный кабинет">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    <main class = "page-main">
+        <div class="container">
+          <h1 class = "visually-hidden">HELYFLY - фотосессии в вертолете</h1>
+          <section class="page-main__promo promo">
+            <h2 class = "visually-hidden">Стоимость и бронирование услуги</h2>
+            <p class = "promo__slogan">
+                Эксклюзивная <span class = "promo__slogan--color">фотосессия</span> при&nbsp;полете на&nbsp;вертолете
+            </p>
+            <div class = "promo__price price">
+              <span class = "price__text">Стоимость:</span>
+              <span class = "price__sum">1500<span class = "price__rub" aria-label="рублей"></span></span>
+            </div>
+            <button class = "promo__button button button-reservation">Забронировать место</button>
+          </section>
+          <section class = "page-main__about-photosession about-photosession">
+            <h2 class = "about-photosession__title">Фотосессия в&nbsp;вертолете</h2>
+            <div class="about-photosession__video">
+              <div class = "about-photosession__image-wrapper">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1920px)"
+                        srcset="img/video-desk.webp, img/video-desk@2x.webp 2x">
+                    <source type="image/webp"
+                        srcset="img/video-mobile.webp, img/video-mobile@2x.webp 2x">
+                    <source media="(min-width: 1920px)"
+                        srcset="img//video-desk.jpg, img//video-desk@2x.jpg 2x">
+                    <img class="about-photosession__image" src="img/video-mobile.jpg"
+                        srcset="img/video-mobile@2x.jpg 2x" alt="Влюбленная пара">
+                </picture>
+                <button class="about-photosession__play-button" aria-label="Воспроизвести"></button>
+              </div>
+              <div class="about-photosession__video-content">
+                <iframe src="https://#;controls=1" width="290" height="197"></iframe>
+              </div>
+            </div>
+
+            <p class = "about-photosession__text">
+                Полет на вертолете это прекрасная возможность получить&nbsp;новые ощущения! А наш замечательный фотограф&nbsp;запечатлит лучшие моменты.
+            </p>
+            <ul class = "about-photosession__list">
+              <li class = "about-photosession__item about-photosession__item--time">3 часа съемки</li>
+              <li class = "about-photosession__item about-photosession__item--lang">Русский</li>
+              <li class = "about-photosession__item about-photosession__item--money about-photosession__item--no-desktop">от 850$</li>
+              <li class = "about-photosession__item about-photosession__item--location">Москва</li>
+              <li class = "about-photosession__item about-photosession__item--quantity">Более 50 фотографий</li>
+            </ul>
+          </section>
+          <section class = "page-main__advantages advantages">
+            <h2 class = "visually-hidden">Наша гордость</h2>
+            <div class = "advantages__text">Более <b>150</b> отзывов с оценкой</div><span class = "advantages__rating rating" aria-label="пять звезд"></span>
+          </section>
+          <section class = "page-main__photos photos">
+            <h2 class = "photos__title">Фотографии пакета</h2>
+            <div class = "photos__wrapper slider">
+              <ul class = "photos__list slider__list">
+                <li class = "photos__item slider__item">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="img/photo-1.webp, img/photo-1@2x.webp 2x">
+                        <img class="photos__image" src="img/photo-1.jpg"
+                            srcset="img/photo-1@2x.jpg 2x" alt="Девушка">
+                    </picture>
+                </li>
+                <li class = "photos__item slider__item">
+                    <picture>
+                      <source type="image/webp"
+                          srcset="img/photo-2.webp, img/photo-2@2x.webp 2x">
+                      <img class="photos__image" src="img/photo-2.jpg"
+                          srcset="img/photo-2@2x.jpg 2x" alt="Девушка">
+                  </picture>
+                </li>
+                <li class = "photos__item slider__item">
+                  <picture>
+                      <source type="image/webp"
+                          srcset="img/photo-3.webp, img/photo-3@2x.webp 2x">
+                      <img class="photos__image" src="img/photo-3.jpg"
+                          srcset="img/photo-3@2x.jpg 2x" alt="Девушка">
+                  </picture>
+                </li>
+                <li class = "photos__item slider__item">
+                  <picture>
+                      <source type="image/webp"
+                          srcset="img/photo-4.webp, img/photo-4@2x.webp 2x">
+                      <img class="photos__image" src="img/photo-4.jpg"
+                          srcset="img/photo-4@2x.jpg 2x" alt="Девушка">
+                  </picture>
+                </li>
+                <li class = "photos__item slider__item">
+                    <picture>
+                      <source type="image/webp"
+                          srcset="img/photo-3.webp, img/photo-3@2x.webp 2x">
+                          <img class="photos__image" src="img/photo-3.jpg"
+                          srcset="img/photo-3@2x.jpg 2x" alt="Девушка">
+                  </picture>
+                </li>
+                <li class = "photos__item slider__item">
+                    <picture>
+                      <source type="image/webp"
+                          srcset="img/photo-4.webp, img/photo-4@2x.webp 2x">
+                          <img class="photos__image" src="img/photo-4.jpg"
+                          srcset="img/photo-4@2x.jpg 2x" alt="Девушка">
+                  </picture>
+                </li>
+                <li class = "photos__item slider__item">
+                    <picture>
+
+                      <source type="image/webp"
+                          srcset="img/photo-2.webp, img/photo-2@2x.webp 2x">
+                          <img class="photos__image" src="img/photo-2.jpg"
+                          srcset="img/photo-2@2x.jpg 2x" alt="Девушка">
+                  </picture>
+                </li>
+                <li class = "photos__item slider__item">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/photo-3.webp, img/photo-3@2x.webp 2x">
+                      <img class="photos__image" src="img/photo-3.jpg"
+                      srcset="img/photo-3@2x.jpg 2x" alt="Девушка">
+                  </picture>
+                </li>
+                <li class = "photos__item photos__item--desktop slider__item">
+                    <picture>
+                    <source type="image/webp"
+                      srcset="img/photo-4.webp, img/photo-4@2x.webp 2x">
+                      <img class="photos__image" src="img/photo-4.jpg"
+                      srcset="img/photo-4@2x.jpg 2x" alt="Девушка">
+                  </picture>
+                </li>
+                <li class = "photos__item photos__item--desktop slider__item">
+                    <picture>
+                      <source type="image/webp"
+                          srcset="img/photo-1.webp, img/photo-1@2x.webp 2x">
+                          <img class="photos__image" src="img/photo-1.jpg"
+                          srcset="img/photo-1@2x.jpg 2x" alt="Девушка">
+                  </picture>
+                </li>
+                <li class = "photos__item photos__item--desktop slider__item">
+                    <picture>
+                      <source type="image/webp"
+                          srcset="img/photo-3.webp, img/photo-3@2x.webp 2x">
+                          <img class="photos__image" src="img/photo-3.jpg"
+                          srcset="img/photo-3@2x.jpg 2x" alt="Девушка">
+                  </picture>
+                </li>
+                <li class = "photos__item photos__item--desktop slider__item">
+                    <picture>
+                      <source type="image/webp"
+                          srcset="img/photo-2.webp, img/photo-2@2x.webp 2x">
+                          <img class="photos__image" src="img/photo-2.jpg"
+                          srcset="img/photo-2@2x.jpg 2x" alt="Девушка">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+            <button class = "photos__button show-all-photo">Показать все фото</button>
+          </section>
+          <section class = "page-main__information information">
+              <h2 class = "visually-hidden">Информация об организаторе и услуге</h2>
+                <h3 class = "information__title">Об организаторе:</h3>
+                <div class = "information__organizer organizer">
+                  <div class = "organizer__photo-wrapper">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="img/avatar-1.webp, img/avatar-1@2x.webp 2x">
+                        <img class="organizer__photo" src="img/avatar-1.jpg"
+                            srcset="img/avatar-1@2x.jpg 2x" alt="Фото Марины Ивановой">
+                    </picture>
+                  </div>
+                  <span class = "organizer__name">Марина Иванова</span>
+                  <span class = "organizer__prof">Фотограф</span>
+                  <a class = "organizer__link" href = "#">Показать больше<br> информации о фотографе</a>
+                </div>
+                <div class = "information__text-wrapper">
+                  <p class = "information__text">
+                      Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов туристической отрасли,
+                      которые хорошо разбираются в&nbsp;маркетинге, операциях и&nbsp;услугах обслуживания клиентов, специализирующихся на&nbsp;совместном использовании и&nbsp;частных турах.
+                  </p>
+                  <p class = "information__text">
+                      Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету
+                      и планам клиента. Мы&nbsp;никогда не зависим от&nbsp;субпоставщиков и&nbsp;не&nbsp;свяжемся…
+                  </p>
+                  <button class = "information__button">Читать еще</button>
+                </div>
+
+                <h3 class = "information__title">Что я предоставлю:</h3>
+                <ul class = "information__list">
+                    <li class = "information__item">
+                        Встречу вас на машине после длительного перелёта.
+                    </li>
+                    <li class = "information__item">
+                        Качественный подбор места и&nbsp;локации для вашей съемки.
+                    </li>
+                    <li class = "information__item">
+                        При необходимости всегда возможно прерваться на обед/ужин.
+                    </li>
+                    <li class = "information__item">
+                        Более 50 фотографий на выходе с&nbsp;обработкой и замечательные впечатления о Дубае!
+                    </li>
+                </ul>
+                <button class = "information__button">Читать еще</button>
+          </section>
+
+          <section class = "page-main__registration registration">
+            <h2 class = "visually-hidden">Выбор даты для записи</h2>
+              <p class = "registration__title">Доступная съемка в&nbsp;ближайшее&nbsp;время</p>
+              <ul class = "registration__list">
+                <li class = "registration__item">
+                  <div class = "registration__item-text">Пятница, 14 сентября
+                    <svg class="registration__icon--calendar" width="25" height="25" tabindex="0">
+                      <use xlink:href="img/sprite.svg#sprite-calendar"></use>
+                    </svg>
+                  </div>
+                  <ul class = "registration__sublist">
+                    <li class = "registration__subitem">
+                      <div class = "registration__subitem-wrapper">
+                        <span class = "registration__time">15:00 - 18:00</span>
+                        <span class = "registration__price">850$</span>
+                        <span class = "registration__free-place">Осталось &mdash; <span class = "registration__counter">1 место</span></span>
+                      </div>
+                      <button class = "registration__button button button--registration button-reservation">Выбрать</button>
+                    </li>
+                    <li class = "registration__subitem">
+                        <div class = "registration__subitem-wrapper">
+                          <span class = "registration__time">19:00 - 22:00</span>
+                          <span class = "registration__price">850$</span>
+                          <span class = "registration__free-place">Осталось &mdash; <span class = "registration__counter">1 место</span></span>
+                        </div>
+                        <button class = "registration__button button button--registration button-reservation">Выбрать</button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="registration__item advantages advantages--reg">
+                    <div class = "advantages__text advantages__text--reg">Более <b>150</b> отзывов с оценкой</div>
+                    <div class = "advantages__rating advantages__rating--reg rating rating--reg" aria-label="пять звезд"></div>
+                </li>
+              </ul>
+          </section>
+
+          <section class = "page-main__map map">
+            <h2 class = "visually-hidden">Карта места встречи</h2>
+              <div class="map__api">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A929d77ec3b3c768b7dc96338745d8872a490b9981bc84f1a38ab927ae992831d&amp;source=constructor" width="320" height="423" frameborder="0"></iframe>
+              </div>
+              <div class="map__image-wrapper">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1920px)"
+                        srcset="img/map-desk.webp, img/map-desk@2x.webp 2x">
+                    <source type="image/webp"
+                        srcset="img/map-mobile.webp, img/map-mobile@2x.webp 2x">
+                    <source media="(min-width: 1920px)"
+                        srcset="img/map-desk.jpg, img/map-desk@2x.jpg 2x">
+                    <img class="map__image" src="img/map-mobile.jpg"
+                        srcset="img/map-mobile@2x.jpg 2x" alt="Карта места встречи">
+                </picture>
+              </div>
+              <div class = "map__legend legend">
+                <div class = "legend__wrapper legend-slider">
+                  <ul class = "legend__list legend-slider__list">
+                    <li class = "legend__item slider__item">
+                      <span class = "legend__number">1</span>
+                      <div class = "legend__text-wrapper">
+                        <span class = "legend__question">Где встречаемся?</span>
+                        <span class = "legend__answer">Москва</span>
+                      </div>
+                    </li>
+                    <li class = "legend__item legend-slider__item">
+                      <span class = "legend__number">2</span>
+                      <div class = "legend__text-wrapper">
+                        <span class = "legend__question">Время съемки</span>
+                        <span class = "legend__answer">3 часа</span>
+                      </div>
+                    </li>
+                    <li class = "legend__item legend-slider__item">
+                      <span class = "legend__number">3</span>
+                      <div class = "legend__text-wrapper">
+                        <span class = "legend__question">Мест осталось:</span>
+                        <span class = "legend__answer">2 места</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class = "legend__arrow-button-wrapper slider__arrow-button-wrapper">
+                    <button class = "legend__arrow-button-left slider__left" aria-label="Листать влево">
+                        <svg class="legend__arrow-left-image" width="10" height="19">
+                            <use xlink:href="img/sprite.svg#sprite-arrow"></use>
+                        </svg>
+                    </button>
+                    <button class = "legend__arrow-button-right slider__right" aria-label="Листать вправо">
+                        <svg class="legend__arrow-right-image" width="10" height="19">
+                            <use xlink:href="img/sprite.svg#sprite-arrow"></use>
+                        </svg>
+                    </button>
+                  </div>
+                  <div class = "legend__button-control-wrapper slider__button-control-wrapper">
+                    <button class = "legend__button-control slider__one" aria-label="Первый слайд"></button>
+                    <button class = "legend__button-control slider__two" aria-label="Второй слайд"></button>
+                    <button class = "legend__button-control slider__three" aria-label="Третий слайд"></button>
+                  </div>
+                </div>
+                <div class = "legend__organizer organizer organizer--legend">
+                  <div class = "organizer__photo-wrapper organizer__photo-wrapper--legend">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="img/small-avatar-1.webp, img/small-avatar-1@2x.webp 2x">
+                        <img class="organizer__photo" src="img/small-avatar-1.jpg"
+                            srcset="img/small-avatar-1@2x.jpg 2x" alt="Фото Марины Ивановой">
+                    </picture>
+                  </div>
+                  <div class = "organizer__wrapper organizer__wrapper--legend">
+                    <span class = "organizer__name organizer__name--legend">Мария Иванова</span>
+                    <span class = "organizer__prof organizer__prof--legend">Фотограф</span>
+                    <a class = "organizer__link organizer__link--legend">Показать больше информации о&nbsp;фотографе</a>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section class = "reviews">
+            <h2 class = "reviews__title">Отзывы</h2>
+            <div class="reviews__list">
+                <blockquote class="reviews__item">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1920px)"
+                            srcset="img/avatar-2-desk.webp, img/avatar-2-desk@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="img/avatar-2-mobile.webp, img/avatar-2-mobile@2x.webp 2x">
+                        <source media="(min-width: 1920px)"
+                            srcset="img/avatar-2-desk.jpg, img/avatar-2-desk@2x.jpg 2x">
+                        <img class="reviews__author-photo" src="img/avatar-2-mobile.jpg"
+                            srcset="img/avatar-2-mobile@2x.jpg 2x" alt="Фото Валерии Антоновой">
+                    </picture>
+                    <div class = "reviews__quote-wrapper">
+                      <cite class="reviews__author-name">Валерия Антонова</cite>
+                      <span class="reviews__prof">Арт-директор</span>
+                      <span class = "reviews__rating rating"></span>
+                    </div>
+                    <span class = "reviews__rating-text">Супер! Я бы заказала съемку снова!</span>
+                    <p class="reviews__text">
+                        Хотим выразить огромную благодарность вашей компании!
+                        Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!
+                    </p>
+                    <time class = "reviews__date" datetime="2019-04-22">27 Апреля, 2019г.</time>
+                </blockquote>
+                <blockquote class="reviews__item">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1920px)"
+                            srcset="img/avatar-3-desk.webp, img/avatar-3-desk@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="img/avatar-3-mobile.webp, img/avatar-3-mobile@2x.webp 2x">
+                        <source media="(min-width: 1920px)"
+                            srcset="img/avatar-3-desk.jpg, img/avatar-3-desk@2x.jpg 2x">
+                        <img class="reviews__author-photo" src="img/avatar-3-mobile.jpg"
+                            srcset="img/avatar-3-mobile@2x.jpg 2x" alt="Фото Виталия Петрова">
+                    </picture>
+                    <div class = "reviews__quote-wrapper">
+                      <cite class="reviews__author-name">Виталий Петров</cite>
+                      <span class="reviews__prof">Фотограф</span>
+                      <span class = "reviews__rating rating"></span>
+                    </div>
+                    <span class = "reviews__rating-text">Супер! Я бы заказал съемку снова!</span>
+                    <p class="reviews__text">
+                        Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :)
+                        Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация&nbsp;полёта&nbsp;отличная. Спасибо!
+                    </p>
+                    <time class = "reviews__date" datetime="2019-04-22">19 Апреля, 2019г.</time>
+                </blockquote>
+                <blockquote class="reviews__item reviews__item--mobile">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1920px)"
+                            srcset="img/avatar-4-desk.webp, img/avatar-4-desk@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="img/avatar-4-mobile.webp, img/avatar-4-mobile@2x.webp 2x">
+                        <source media="(min-width: 1920px)"
+                            srcset="img/avatar-4-desk.jpg, img/avatar-4-desk@2x.jpg 2x">
+                        <img class="reviews__author-photo" src="img/avatar-4-mobile.jpg"
+                            srcset="img/avatar-4-mobile@2x.jpg 2x" alt="Фото Джима Керри">
+                    </picture>
+                    <div class = "reviews__quote-wrapper">
+                      <cite class="reviews__author-name">Джим Керри</cite>
+                      <span class = "reviews__rating  rating"></span>
+                    </div>
+                    <span class = "reviews__rating-text">Супер! Я бы заказал съемку снова!</span>
+                    <p class="reviews__text">
+                        Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы
+                        с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!))
+                        А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить)))
+                        Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!
+                    </p>
+                    <time class = "reviews__date" datetime="2019-04-22">11 Апреля, 2019г.</time>
+                </blockquote>
+                <blockquote class="reviews__item reviews__item--mobile reviews__item--desktop">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1920px)"
+                            srcset="img/avatar-2-desk.webp, img/avatar-2-desk@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="img/avatar-2-mobile.webp, img/avatar-2-mobile@2x.webp 2x">
+                        <source media="(min-width: 1920px)"
+                            srcset="img/avatar-2-desk.jpg, img/avatar-2-desk@2x.jpg 2x">
+                        <img class="reviews__author-photo" src="img/avatar-2-mobile.jpg"
+                            srcset="img/avatar-2-mobile@2x.jpg 2x" alt="Фото Джима Керри">
+                    </picture>
+                    <div class = "reviews__quote-wrapper">
+                      <cite class="reviews__author-name">Джим Керри</cite>
+                      <span class="reviews__prof">Фотограф</span>
+                      <span class = "reviews__rating rating"></span>
+                    </div>
+                    <span class = "reviews__rating-text">Супер! Я бы заказал съемку снова!</span>
+                    <p class="reviews__text">
+                        Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы
+                        с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!))
+                        А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить)))
+                        Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!
+                    </p>
+                    <time class = "reviews__date" datetime="2019-04-22">11 Апреля, 2019г.</time>
+                </blockquote>
+                <button class = "reviews__button show-all-review">Показать Все <span class ="reviews__counter">(134)</span></button>
+              </div>
+            </section>
+        </div>
+      </main>
+
+          <footer class = "page-footer">
+              <div class = "page-footer__wrapper">
+                <a class="page-footer__logo logo" aria-label="Логотип HELYFLY">
+                  <svg class="logo__image" width="84" height="15.33">
+                      <use xlink:href="img/sprite.svg#sprite-logo"></use>
+                  </svg>
+                </a>
+
+                <div class = "page-footer__social social">
+                  <ul class = "social__list">
+                    <li class = "social__item">
+                        <a class="social__link social__link--vk" href="#">
+                            <span class="visually-hidden">ВКонтакте</span>
+                            <svg class="social__icon social__icon--vk" width="25.5" height="15.18">
+                                <use xlink:href="img/sprite.svg#sprite-vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--fb" href="#">
+                            <span class="visually-hidden">Фейсбук</span>
+                            <svg class="social__icon social__icon--fb" width="25.49" height="25.49">
+                                <use xlink:href="img/sprite.svg#sprite-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--in" href="#" aria-label="Инстаграм">
+                            <svg class="social__icon social__icon--in" width="25.49" height="25.5">
+                                <use xlink:href="img/sprite.svg#sprite-instragram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class = "page-footer__wrapper">
+                <div class = "page-footer__payment payment">
+                  <ul class = "payment__list">
+                    <li class = "payment__item">
+                      <a class="payment__link payment__link--mc" href="#" aria-label="Master-Card">
+                          <img class="payment__icon" src="img/MC.svg" width="34" height="21"
+                          alt="Логотип Master-Card">
+                      </a>
+                    </li>
+                    <li class = "payment__item">
+                      <a class="payment__link payment__link--visa" href="#" aria-label="Visa">
+                        <img class="payment__icon" src="img/VISA.svg" width="33" height="23"
+                        alt="Логотип Visa">
+                      </a>
+                    </li>
+                    <li class = "payment__item">
+                      <a class="payment__link payment__link--pp" href="#" aria-label="Visa">
+                        <img class="payment__icon" src="img/PP.svg" width="34" height="23"
+                        alt="Логотип Pay-pal">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class = "page-footer__lang lang">
+                    <span class = "lang__text">RU</span>
+                </div>
+                <div class="page-footer__text-wrapper">
+                  <div class = "page-footer__support">
+                      Тех. поддержка: 8(800)700-00-00
+                  </div>
+                  <div class = "page-footer__copyright">© 2018 HELYFLY. All Rights Reserved.</div>
+                </div>
+              </div>
+        </footer>
+
+
+
+
+        <section class = "modal">
+            <h2 class = "modal__title">Бронирование</h2>
+            <form class = "modal__form" action="#" method="GET">
+              <fieldset class = "modal__field">
+                <ul class = "modal__list">
+                  <li class = "modal__item">
+                    <label class = "modal__label" for = "date">Дата<b><sup class = "modal__label--color">*</sup></b></label>
+                    <input class = "modal__input modal__input--date" type = "text" id = "date" name="calendar" value="14.09.2019" required>
+                    <svg class="modal__input-icon--calendar" width="25" height="24" tabindex="0">
+                      <use xlink:href="img/sprite.svg#sprite-calendar"></use>
+                    </svg>
+                  </li>
+                  <li class = "modal__item">
+                    <label class = "modal__label" for = "user-email">Email<sup class = "modal__label--color">*</sup></label>
+                    <input class = "modal__input" type = "email" id = "user-email" name="user-email" placeholder="Электронная почта" required>
+                  </li>
+                  <li class = "modal__item modal__item--name">
+                    <label class = "modal__label" for = "user-name">Имя<sup class = "modal__label--color">*</sup></label>
+                    <input class = "modal__input" type = "text" id = "user-name" name="user-name" value = "Иван" required>
+                  </li>
+                  <li class = "modal__item modal__item--surname">
+                    <label class = "modal__label" for = "user-surname">Фамилия<sup class = "modal__label--color">*</sup></label>
+                    <input class = "modal__input" type = "text" id = "user-surname" name="user-surname" value = "Громов" required>
+                  </li>
+                  <li class = "modal__item modal__item--user-phone">
+                    <label class = "modal__label" for = "user-phone">Телефон<sup class = "modal__label--color">*</sup></label>
+                    <input class = "modal__input" type = "tel" id = "user-phone" name="user-phone" placeholder="+7 (905) 184-81-40" required>
+                  </li>
+                  <li class = "modal__item modal__item--card">
+                    <label class = "modal__label modal__label--card" for = "payment-card">Данные карты<sup class = "modal__label--color">*</sup></label>
+                    <input class = "modal__input modal__input--card" type = "text" id = "payment-card" name="payment-card-number" placeholder="Номер карты" pattern="[0-9]{16}" required>
+                    <input class = "modal__input modal__input--card modal__input--card-time" type = "text" name="payment-card-time" placeholder="Срок действия" pattern="\d{2}/\d{2}" required>
+                    <input class = "modal__input modal__input--card modal__input--card-key" type = "text" name="payment-card-key" placeholder="CVV" pattern="[0-9]{3}" required>
+                  </li>
+                  <li class = "modal__item">
+                    <input class = "modal__checkbox visually-hidden" type = "checkbox" id = "agreement-checkbox" name="agreement-checkbox" required>
+                    <label class = "modal__checkbox-label" for = "agreement-checkbox">Я согласен с&nbsp;пользовательским соглашением&nbsp;и&nbsp;публичной офертой</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class ="modal__button button button--modal">Забронировать</button>
+            </form>
+          <button class = "modal__button-close button-close" aria-label="Закрыть">
+            <svg class="button-close__image" width="17" height="17">
+              <use xlink:href="img/sprite.svg#sprite-close"></use>
+            </svg>
+          </button>
+        </section>
+        <div class="overlay"></div>
+
+        <script src="js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody()
+        </script>
+        <script src="js/picturefill.min.js"></script>
+        <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

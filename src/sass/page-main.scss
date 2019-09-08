@@ -1,0 +1,42 @@
+@import "style-lib.scss";
+
+.page-main {
+  &__promo {
+    margin-left: -15px;
+  }
+
+  &__advantages {
+    border-top: $base-border;
+    border-bottom: $base-border;
+  }
+
+  &__registration {
+    margin-bottom: 45px;
+  }
+
+  &__map {
+    margin-left: -15px;
+  }
+
+}
+
+
+
+
+
+@media (min-width: 1920px) {
+  .page-main {
+    &__promo {
+      margin-left: -390px;
+    }
+
+    &__registration {
+      margin-bottom: 80px;
+    }
+
+    &__map {
+      margin-left: -390px;
+    }
+
+  }
+}

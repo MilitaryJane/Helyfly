@@ -1,0 +1,143 @@
+@import "style-lib.scss";
+
+.price {
+  position: relative;
+  box-sizing: border-box;
+  width: 200px;
+  padding: 0;
+
+  color: $companion1-text-color;
+
+  background-color: $companion1-bg-color;
+
+
+  border-radius: 5px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+  &::after {
+    @include pseudo-element;
+
+    width: 21px;
+    height: 21px;
+
+    border-radius: 3px;
+    background-color: $companion1-bg-color;
+
+    transform: rotate(45deg);
+
+    top: 60px;
+    left: 110px;
+  }
+
+  &__text {
+    display: block;
+    width: 121px;
+    padding: 0;
+    padding-top: 7px;
+    padding-left: 17px;
+
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+  }
+
+  &__sum {
+    position: relative;
+    display: block;
+    width: 113px;
+    padding: 0;
+    padding-left: 18px;
+    padding-bottom: 5px;
+    margin: 0;
+
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 800;
+
+    &::before {
+      @include pseudo-element;
+      top: -19px;
+      right: -54px;
+      width: 45px;
+      height: 45px;
+      border: 1px solid $base-bg-color;
+      border-radius: 50%;
+    }
+
+    &::after {
+      @include pseudo-element;
+      content: "%";
+
+      top: -12px;
+      right: -43px;
+    }
+  }
+
+  &__rub {
+    position: relative;
+
+    &::before {
+      @include pseudo-element;
+      top: 0px;
+      left: 0px;
+
+      width: 30px;
+      height: 30px;
+
+      background-image: url("../img/rub.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .price {
+    width: 223px;
+    padding: 0;
+
+
+    &::after {
+      width: 23px;
+      height: 23px;
+
+      top: 68px;
+      left: 120px;
+    }
+
+    &__text {
+      padding-left: 20px;
+
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__sum {
+      padding-left: 23px;
+      padding-bottom: 7px;
+
+      font-size: 35px;
+
+      &::before {
+        top: -23px;
+        right: -60px;
+        width: 52px;
+        height: 52px;
+
+      }
+
+      &::after {
+        top: -13px;
+        right: -47px;
+      }
+    }
+
+    &__rub {
+      &::before {
+        @include pseudo-element;
+        top: 3px;
+      }
+    }
+  }
+}

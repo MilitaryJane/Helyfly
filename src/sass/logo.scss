@@ -1,0 +1,17 @@
+@import "style-lib.scss";
+
+.logo {
+  cursor: pointer;
+
+  &__image {
+    width: 84px;
+    height: 15.33px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .logo__image {
+    width: 128.4px;
+    height: 22.85px;
+  }
+}
