@@ -1,6 +1,6 @@
 (function () {
   'use strict'
-  if(document.documentElement.clientWidth <= 1920) {
+  if(document.documentElement.clientWidth < 1920) {
   var position = 0;
 
   window.addEventListener('DOMContentLoaded', function () {

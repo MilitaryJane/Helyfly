@@ -626,6 +626,9 @@ img {
       width: 420px;
       margin-bottom: 40px; }
     .legend__list {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      position: static;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -637,6 +640,7 @@ img {
               flex-direction: column;
       padding: 0;
       margin: 0;
+      margin-left: 38px;
       width: 420px; }
     .legend__item {
       display: -webkit-box;
@@ -651,7 +655,7 @@ img {
       padding: 0;
       padding-top: 19px;
       margin: 0;
-      margin-left: 30px;
+      margin-left: 0px;
       z-index: 2; }
       .legend__number::before {
         width: 61px;
